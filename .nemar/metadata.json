@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEG, ECG and pupil data from young and older adults: rest and auditory cued reaction time tasks",
-  "description": "This dataset comprises synchronized electroencephalogram (EEG), electrocardiogram (ECG), and pupillography recordings from 75 participants (36 young and 39 older adults) during auditory cued reaction time tasks and passive listening conditions. Participants performed a simple reaction time task and a go/no-go task, with EEG acquired at 500 Hz using 64 scalp electrodes, ECG recorded bipolarly from chest electrodes, and pupil data sampled at 240 Hz. The dataset is designed to investigate age-related differences in neural, cardiac, and pupillary responses during cognitive and perceptual decision-making tasks.",
-  "methods_description": "EEG was recorded using a 64-channel Neuroscan system with electrodes placed according to the International 10-20 standard at 500 Hz sampling rate. ECG was recorded bipolarly from chest electrodes. Pupil data was acquired using an iView X Hi-Speed 1250 system (SMI) at 240 Hz. Participants performed auditory cued simple reaction time and go/no-go tasks (two 8-minute runs each, 120 trials per task) and a passive listening condition (4 minutes). Auditory stimuli were pure tones at 1500 Hz (cue), 1700 Hz (go), 1300 Hz (no-go), and 1000 Hz (error feedback), presented at approximately 67 dB(A). Electrode positions were digitized using a 3D Fastrak system.",
+  "description": "This dataset contains synchronized EEG, ECG and pupil recordings from 36 young and 39 older adults performing auditory cued reaction time tasks, plus a passive listening condition. The active tasks were a cued simple reaction time task and a cued go/no-go task, and they allow investigation of age-related differences in cortical, autonomic and pupillary responses during anticipation and perceptual decision-making.",
+  "methods_description": "EEG was recorded with a 64-channel Neuroscan system at 500 Hz, with electrode positions digitized in 3D and vertical and horizontal EOG and bipolar chest ECG recorded. Pupil data were acquired with an SMI iView X Hi-Speed 1250 system at 240 Hz and merged into the EEGLAB files with the EYE-EEG plugin. Participants completed a 4-minute passive listening task followed by two 8-minute runs of each active task (120 trials per task) using pure-tone auditory cues and targets.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,32 +22,31 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
     },
     {
-      "term": "pupillography"
+      "term": "pupillometry"
     },
     {
-      "term": "reaction time"
-    },
-    {
-      "term": "aging"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
+      "term": "Aging",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000375"
+    },
+    {
+      "term": "Reaction Time",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D011930"
     },
     {
       "term": "go/no-go task"
+    },
+    {
+      "term": "auditory cue"
+    },
+    {
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003690",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003690",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -59,12 +58,17 @@
     {
       "identifier": "10.1016/j.neuroimage.2019.06.004",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds003690.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003690",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -75,6 +79,10 @@
     {
       "funder_name": "Fundação para a Ciência e a Tecnologia",
       "award_number": "UID/NEU/04539/2013"
+    },
+    {
+      "funder_name": "Fundação para a Ciência e a Tecnologia",
+      "award_number": "UID/NEU/04539/2013-COMPETE"
     },
     {
       "funder_name": "Fundação para a Ciência e a Tecnologia",
@@ -98,7 +106,7 @@
     "eeg"
   ],
   "sizes": [
-    "23.0 GB (382 files)"
+    "21.46 GB (382 files)"
   ],
   "formats": [
     ".gitattributes",
