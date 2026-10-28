@@ -18,7 +18,8 @@
     "Description": "age group that the participant belongs to",
     "Levels": {
       "Young": "young adult",
-      "older": "older adult"
+      "older": "older adult",
+      "Older": "older adult"
     }
   },
   "task_order": {
